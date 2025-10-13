@@ -130,9 +130,6 @@ const skillCateogries = [
     ))
   }
 
-   <!-- <SkillCard name='HTML' icon='skill-icons:html' description='HTML' experience={3} level={4} interest={5} />
-</div> -->
-
 <style>
   .skill-container {
     display: grid;
@@ -163,10 +160,10 @@ const skillCateogries = [
     transform: translateY(20px);
   }
 
-  /* .skill-card-wrapper.animate {
+  .skill-card-wrapper.animate {
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: calc(var(--animation-order) * 0.15s);
-  } */
+  }
 
   @keyframes fadeInUp {
     to {
@@ -176,3 +173,28 @@ const skillCateogries = [
   }
 </style>
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.skill-card-wrapper').forEach((card) => {
+              card.classList.add('animate')
+            })
+
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      // 要素が画面の 10% の位置に入ったらアニメーションを開始する
+      { threshold: 0.1 }
+    )
+
+    // すべてのスキルカテゴリを監視する
+    document.querySelectorAll('.skill-category').forEach((category) => {
+      observer.observe(category)
+    })
+  })
+</script>

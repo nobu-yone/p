@@ -51,7 +51,7 @@ const { name , icon , description , experience , level , interest } = Astro.prop
 <div class="skill-card">
   <div class="skill-card-header">
     <div class="skill-icon">
-       <Icon name={icon} width={40} height={40} />
+      <Icon name={icon} width={40} height={40} />
     </div>
     <h3 class="skill-name">{name}</h3>
   </div>
@@ -78,10 +78,10 @@ const { name , icon , description , experience , level , interest } = Astro.prop
 
 <style>
    .skill-card {
-      background-color: var(--card-bg-color);
-      border-radius: 8px;
-      padding; 1.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     background-color: var(--card-bg-color);
+     border-radius: 8px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
    .skill-icon {
@@ -97,7 +97,7 @@ const { name , icon , description , experience , level , interest } = Astro.prop
    .skill-name{
      font-size: 1.2rem;
      margin: 0;
-     color; var(--text-color);
+     color: var(--text-color);
     }
 
     .skill-description {
