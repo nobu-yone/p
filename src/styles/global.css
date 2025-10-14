@@ -75,24 +75,29 @@ h6 {
 	color: var(--text-color);
 	line-height: 1.2;
 }
+
 h1 {
-	font-size: 3.052em;
+	font-size: 2.5em;
 }
 
 h2 {
-	font-size: 2.441em;
+	font-size: 2.25em;
 }
 
 h3 {
-	font-size: 1.953em;
+	font-size: 2em;
 }
 
 h4 {
-	font-size: 1.563em;
+	font-size: 1.5em;
 }
 
 h5 {
 	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1em;
 }
 
 strong,
@@ -126,9 +131,10 @@ img {
 	height: auto;
 	border-radius: 8px;
 }
+
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	background-color: var(--code-bg-color);
 	border-radius: 2px;
 }
 
@@ -186,7 +192,7 @@ hr {
  }
 
 a {
-  transion: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 a:hover {

@@ -1,20 +1,18 @@
 ---
-import { SITE_TITLE } from '../consts';
-const today = new Date();
+import { SITE_TITLE } from '../consts'
+const today = new Date()
 ---
 
 <footer>
-	&copy; {today.getFullYear()} 
-	{ SITE_TITLE } All rights reserved.
+  &copy; {today.getFullYear()}
+  {SITE_TITLE} All rights reserved.
 </footer>
 
-
 <style>
-	footer {
-		padding: 1em;
-		font-size: 0.8em;
-		color: rgb(var(--black));
-		text-align: center;
-	}
-
+  footer {
+    padding: 1em;
+    font-size: 0.8em;
+    color: var(gray-dark);
+    text-align: center;
+  }
 </style>

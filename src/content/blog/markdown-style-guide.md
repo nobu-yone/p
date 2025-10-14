@@ -1,5 +1,5 @@
 ---
-title: 'Markdown Style Guide'
+title: '宝くじが当たった後の秘密'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jun 19 2024'
 heroImage: '../../assets/blog-placeholder-1.jpg'
