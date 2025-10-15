@@ -5,7 +5,7 @@ on:
   # 異なるブランチ名を使用する場合は、`main`をブランチ名に置き換えてください。
   push:
 <<<<<<< HEAD
-    branches: [ develop ]
+    branches: [ master ]
 =======
     branches: [ master ]
 >>>>>>> faa17f8439154b7f4bcac70e2e0cafc5b2163a05
